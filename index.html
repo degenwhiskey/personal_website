@@ -3,94 +3,149 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Vishal Patil - Data Analyst</title>
+  <title>Vishal Patil - Retro Gamer Portfolio</title>
+  <!-- Retro gaming font -->
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
   <style>
-    body { font-family: Arial, sans-serif; margin: 0; background: #f7f7f7; color: #333; }
-    .container { max-width: 900px; margin: auto; padding: 40px 20px; background: white; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
-    h1, h2 { color: #2c3e50; }
-    .section { margin-bottom: 40px; }
-    .contact a { text-decoration: none; color: #2980b9; }
-    ul { padding-left: 20px; }
-    .job { margin-bottom: 20px; }
-    .job-title { font-weight: bold; }
-    .links a { margin-right: 10px; }
+    body {
+      margin: 0;
+      padding: 0;
+      background: #0d1117;
+      color: #39ff14;
+      font-family: 'Press Start 2P', monospace;
+      text-shadow: 0 0 5px rgba(57,255,20,0.8);
+    }
+    .container {
+      max-width: 800px;
+      margin: 50px auto;
+      padding: 30px;
+      background: rgba(0,0,0,0.8);
+      border: 3px solid #39ff14;
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(0,255,0,0.5);
+    }
+    h1, h2 {
+      margin-bottom: 20px;
+      color: #39ff14;
+      text-align: center;
+    }
+    .contact, .skills, .links {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    .contact a, .links a {
+      color: #39ff14;
+      text-decoration: none;
+    }
+    .section {
+      margin-bottom: 40px;
+    }
+    .job {
+      margin-bottom: 30px;
+      padding: 15px;
+      border: 2px dashed #39ff14;
+      border-radius: 5px;
+    }
+    .job-title {
+      font-size: 14px;
+      margin-bottom: 10px;
+      color: #ffffff;
+      text-shadow: 0 0 3px rgba(255,255,255,0.8);
+    }
+    ul {
+      padding-left: 20px;
+      list-style-type: none;
+    }
+    ul li::before {
+      content: '\25B6'; /* triangular bullet */
+      color: #39ff14;
+      margin-right: 10px;
+    }
+    .skills p, .education p, .professional-summary p {
+      font-size: 12px;
+      line-height: 1.6;
+    }
+    a:hover {
+      text-shadow: 0 0 10px rgba(57,255,20,1);
+    }
+    /* Blinking cursor after title */
+    h1::after {
+      content: '_';
+      animation: blink 1s infinite;
+    }
+    @keyframes blink {
+      0%, 50% { opacity: 1; }
+      51%, 100% { opacity: 0; }
+    }
   </style>
 </head>
 <body>
   <div class="container">
-    <h1>Vishal Patil</h1>
+    <h1>VISHAL PATIL</h1>
     <p class="contact">
       📞 <a href="tel:+919665532101">+91 9665532101</a> | ✉️ <a href="mailto:vishalhp2000@gmail.com">vishalhp2000@gmail.com</a><br>
       🔗 <a href="https://www.linkedin.com/in/vishal-patil-2b240416a/">LinkedIn</a> | <a href="https://github.com/vishalpatil39">GitHub</a>
     </p>
 
-    <div class="section">
-      <h2>Professional Summary</h2>
-      <p>Skilled Data Analyst with 4+ years of experience in predictive analytics, data manipulation, and visualization. Adept at translating complex datasets into actionable insights for business impact.</p>
+    <div class="section professional-summary">
+      <h2>PROFESSIONAL SUMMARY</h2>
+      <p>Skilled Data Analyst with 4+ years experience in analytics, predictive modeling, and visualization. Turning raw data into pixel-perfect insights.</p>
     </div>
 
     <div class="section">
-      <h2>Experience</h2>
-
+      <h2>EXPERIENCE</h2>
       <div class="job">
-        <div class="job-title">Data Analyst – Incredulous Labs (Jul 2024 – Present, Remote)</div>
+        <div class="job-title">DATA ANALYST – INCREDULOUS LABS (JUL 2024 – PRESENT)</div>
         <ul>
-          <li>Built secure GCP environment and Power BI dashboards for real-time analytics</li>
-          <li>Conducted crypto research and contributed to ABX Analytics platform</li>
-          <li>Performed yield analysis across DeFi protocols, identifying 17% APY strategies</li>
+          <li>Built secure GCP env & Power BI dashboards for real-time analytics</li>
+          <li>Developed ABX Analytics to track tokenomics & whale moves</li>
+          <li>Identified DeFi strategies with up to 17% APY</li>
         </ul>
       </div>
-
       <div class="job">
-        <div class="job-title">Data Analyst – Uniacco (Aug 2023 – Jun 2024, Mumbai)</div>
+        <div class="job-title">DATA ANALYST – UNIACCO (AUG 2023 – JUN 2024)</div>
         <ul>
-          <li>Optimized reporting via Redash & Metabase; improved team performance tracking</li>
-          <li>Forecasted 5.6% revenue increase via RCA analysis for London bookings</li>
+          <li>Forecasted 5.6% revenue lift via RCA on London bookings</li>
+          <li>Enhanced Metabase & Redash reports for team insights</li>
         </ul>
       </div>
-
       <div class="job">
-        <div class="job-title">Data Analyst – Sahicoin (Apr 2022 – Aug 2023, Gurgaon)</div>
+        <div class="job-title">DATA ANALYST – SAHICOIN (APR 2022 – AUG 2023)</div>
         <ul>
-          <li>Developed crypto trading strategies (83% win rate, 6.3% monthly return)</li>
-          <li>Built a diversified portfolio with a Sharpe ratio of 1.05</li>
+          <li>Engineered trading bots with 83% win rate & 6.3% monthly ROI</li>
+          <li>Maintained multi-strategy portfolio (Sharpe: 1.05)</li>
         </ul>
       </div>
-
       <div class="job">
-        <div class="job-title">Associate Product Manager – Safexpay (Oct 2021 – Apr 2022, Mumbai)</div>
+        <div class="job-title">ASSOCIATE PRODUCT MANAGER – SAFEXPAY (OCT 2021 – APR 2022)</div>
         <ul>
-          <li>Improved transaction success rate by 6% through smart routing</li>
-          <li>Led market research and competitive analysis</li>
+          <li>Boosted txn success by 6% via smart routing across gateways</li>
         </ul>
       </div>
-
       <div class="job">
-        <div class="job-title">Blockchain R&D Intern – Minority Programmers Association (Mar 2021 – Jul 2021)</div>
+        <div class="job-title">BLOCKCHAIN R&D INTERN – MPA (MAR 2021 – JUL 2021)</div>
         <ul>
-          <li>Designed tokenomics for MPA DAO and led workshop on DAO ecosystems</li>
+          <li>Designed DAO tokenomics & led Layer-2 scaling workshop</li>
         </ul>
       </div>
     </div>
 
-    <div class="section">
-      <h2>Education</h2>
-      <p><strong>B.Tech in Mechanical Engineering</strong><br>National Institute of Technology Karnataka, Surathkal (2017 – 2021)</p>
+    <div class="section education">
+      <h2>EDUCATION</h2>
+      <p><strong>B.Tech Mechanical Engineering</strong><br>NIT Karnataka, Surathkal (2017 – 2021)</p>
     </div>
 
-    <div class="section">
-      <h2>Skills</h2>
-      <p>Excel | Python | SQL | Power BI | Metabase | Looker Studio | Algorithmic Trading | Data Visualization</p>
+    <div class="section skills">
+      <h2>SKILLS</h2>
+      <p>Excel | Python | SQL | Power BI | Metabase | Looker Studio | Trading</p>
     </div>
 
-    <div class="section">
-      <h2>Portfolio Links</h2>
-      <p class="links">
-        <a href="https://www.advancedblockchain.com/">ABX Analytics</a>
-        <a href="https://uniacco.com/">Uniacco</a>
+    <div class="section links">
+      <h2>PORTFOLIO LINKS</h2>
+      <p>
+        <a href="https://www.advancedblockchain.com/">ABX Analytics</a> |
+        <a href="https://uniacco.com/">Uniacco</a> |
         <a href="https://sahicoin.com/">Sahicoin</a>
-        <a href="https://www.safexpay.com/">Safexpay</a>
-        <a href="https://www.minorityprogrammers.com/">Minority Programmers</a>
       </p>
     </div>
   </div>
